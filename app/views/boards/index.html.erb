@@ -1,0 +1,22 @@
+
+
+<table>
+	<tr>
+		<th>Type</th>
+		<th>Length</th>
+		<th>Width</th>
+		<th>Thickness</th>
+		<th>Fins</th>
+	</tr>
+	<% @boards.each do |boarddata|%>	
+	<tr>
+		<td><%= boarddata.style %></td>
+		<td><%= boarddata.length_feet %>' <%= boarddata.length_inches %>"</td>
+		<td><%= boarddata.width %>"</td>
+		<td><%= boarddata.thickness %>"</td>
+		<td><%= boarddata.fins %></td>
+	</tr>
+	<% end %>	
+
+</table>
+
