@@ -4,6 +4,16 @@ source 'https://rubygems.org'
 gem 'rails', '4.0.0'
 gem 'mongoid', github:'mongoid/mongoid'
 
+
+
+
+#where would I find this?????
+gem 'bcrypt-ruby', github:'codahale/bcrypt-ruby'
+
+
+
+
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 

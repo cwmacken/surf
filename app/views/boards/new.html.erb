@@ -1,17 +1,84 @@
-<%= form_for @board do |boarddata| %>
-
-<%= boarddata.label :style ,"TYPE OF BOARD"%>
-<%= boarddata.text_field :style %>
-
-<%= boarddata.label :style ,"LENGTH"%>
-<%= boarddata.text_field :style %>
-<%= boarddata.text_field :style %>
-
-<%= boarddata.label :style ,"WIDTH"%>
-<%= boarddata.text_field :style %>
-
-<%= boarddata.label :style ,"THICKNESS"%>
-<%= boarddata.text_field :style %>
-
-<%= boarddata.label :style ,"FINS	"%>
-<%= boarddata.text_field :style %>
+<ul>
+	<%= form_for @board do |boarddata| %>
+	<li>
+	<%= boarddata.label :style ,"TYPE OF BOARD"%>
+	<%= boarddata.text_field :style %>
+	</li>
+	<li></li>
+	<li>
+	<%= boarddata.label :length ,"LENGTH"%>
+	<%= boarddata.text_field :length %>
+	</li>
+	<li></li>
+	<li>
+	<%= boarddata.label :noseWidth12 ,"NOSE 12\" WIDTH"%>
+	<%= boarddata.text_field :noseWidth12 %>
+	</li>
+	<li>
+	<%= boarddata.label :width ,"WIDTH"%>
+	<%= boarddata.text_field :width %>
+	</li>
+	<li>
+	<%= boarddata.label :widePoint ,"WIDE POINT"%>
+	<%= boarddata.text_field :widePoint %>
+	</li>
+	<li>
+	<%= boarddata.label :Tailwidth12 ,"TAIL 12\"WIDTH"%>
+	<%= boarddata.text_field :tailWidth12 %>
+	</li>
+	<li></li>
+	<li>
+	<%= boarddata.label :thicknessNose12 ,"NOSE 12\" THICKNESS"%>
+	<%= boarddata.text_field :thicknessNose12 %>
+	</li>
+	<li>
+	<%= boarddata.label :thicknessMid ,"THICKNESS"%>
+	<%= boarddata.text_field :thicknessMid %>
+	</li>
+	<li>
+	<%= boarddata.label :thicknessTail12 ,"TAIL 12\" THICKNESS"%>
+	<%= boarddata.text_field :thicknessTail12 %>
+	</li>
+	<li></li>
+	<li>
+	<%= boarddata.label :thicknessNose12 ,"NOSE 12\" THICKNESS"%>
+	<%= boarddata.text_field :thicknessNose12 %>
+	</li>
+	<li>
+	<%= boarddata.label :thicknessMid ,"THICKNESS"%>
+	<%= boarddata.text_field :thicknessMid %>
+	</li>
+	<li>
+	<%= boarddata.label :thicknessTail12 ,"TAIL 12\" THICKNESS"%>
+	<%= boarddata.text_field :thicknessTail12 %>
+	</li>
+	<li></li>
+	<li>
+	<%= boarddata.label :thicknessNose12 ,"NOSE 12\" THICKNESS"%>
+	<%= boarddata.text_field :thicknessNose12 %>
+	</li>
+	<li>
+	<%= boarddata.label :thicknessMid ,"THICKNESS"%>
+	<%= boarddata.text_field :thicknessMid %>
+	</li>
+	<li>
+	<%= boarddata.label :thicknessTail12 ,"TAIL 12\" THICKNESS"%>
+	<%= boarddata.text_field :thicknessTail12 %>
+	</li>
+	<li></li>
+	<li>
+	<%= boarddata.label :railType ,"RAIL TYPE"%>
+	<%= boarddata.text_field :railType %>
+	</li>
+	<li>
+	<%= boarddata.label :tailType ,"TAIL TYPE"%>
+	<%= boarddata.text_field :tailType %>
+	</li>
+	<li>
+	<%= boarddata.label :fins ,"FINS"%>
+	<%= boarddata.text_field :fins %>
+	</li>
+	<%= boarddata.submit %>
+	<% end %>	
+	</li>
+</ul>

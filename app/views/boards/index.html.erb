@@ -11,10 +11,13 @@
 	<% @boards.each do |boarddata|%>	
 	<tr>
 		<td><%= boarddata.style %></td>
-		<td><%= boarddata.length_feet %>' <%= boarddata.length_inches %>"</td>
+		<td><%= boarddata.length %></td>
 		<td><%= boarddata.width %>"</td>
-		<td><%= boarddata.thickness %>"</td>
+		<td><%= boarddata.thicknessMid %>"</td>
 		<td><%= boarddata.fins %></td>
+		 <td><%= button_to "X", {action:"destroy", id:boarddata.id},
+       {method: :delete, data:{confirm:"ARE YOU SURE YOU WANT TO DELETE THIS BOARD?"}, :class => "mybutton"}
+        %></td>
 	</tr>
 	<% end %>	
 
