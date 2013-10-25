@@ -4,17 +4,57 @@
 	<tr>
 		<th>Type</th>
 		<th>Length</th>
+		<th>Volume</th>
+		<th>Nose 12" Width</th>
 		<th>Width</th>
+		<th>Wide Point</th>
+		<th>Tail 12" Width</th>
+		<th>Nose 12" Thickness</th>
 		<th>Thickness</th>
+		<th>Tail 12" Thickness</th>
+		<th>Nose Rocker</th>
+		<th>Nose 12" Rocker</th>
+		<th>Tail 12" Rocker</th>
+		<th>Tail Rocker</th>
+		<th>Entry Concave</th>
+		<th>Nose 12" Concave</th>
+		<th>Mid Concave</th>
+		<th>Tail 12" Concave</th>
+		<th>Exit Concave</th>
 		<th>Fins</th>
+		<th>Tail Type</th>
+		<th>Fins Setup</th>
+		<th>Glass Top</th>
+		<th>Glass Bottom</th>
+		<th>Special Comments</th>
 	</tr>
 	<% @boards.each do |boarddata|%>	
 	<tr>
 		<td><%= boarddata.style %></td>
 		<td><%= boarddata.length %></td>
+		<td><%= boarddata.volume %></td>
+		<td><%= boarddata.noseWidth12 %>"</td>
 		<td><%= boarddata.width %>"</td>
+		<td><%= boarddata.widePoint %>"</td>
+		<td><%= boarddata.tailWidth12 %>"</td>
+		<td><%= boarddata.thicknessNose12 %>"</td>
 		<td><%= boarddata.thicknessMid %>"</td>
+		<td><%= boarddata.thicknessTail12 %>"</td>
+		<td><%= boarddata.rockerNose %>"</td>
+		<td><%= boarddata.rockerNose12 %>"</td>
+		<td><%= boarddata.rockerTail12 %>"</td>
+		<td><%= boarddata.rockerTail %>"</td>
+		<td><%= boarddata.concaveNoseEntry %>"</td>
+		<td><%= boarddata.concaveNose %>"</td>
+		<td><%= boarddata.concaveMid %>"</td>
+		<td><%= boarddata.concaveTail %>"</td>
+		<td><%= boarddata.concaveExit %>"</td>
+		<td><%= boarddata.railType %></td>
+		<td><%= boarddata.tailType %></td>
 		<td><%= boarddata.fins %></td>
+		<td><%= boarddata.glassTop %></td>
+		<td><%= boarddata.glassBottom %></td>
+		<td><%= boarddata.specialComments %></td>
 		 <td><%= button_to "X", {action:"destroy", id:boarddata.id},
        {method: :delete, data:{confirm:"ARE YOU SURE YOU WANT TO DELETE THIS BOARD?"}, :class => "mybutton"}
         %></td>

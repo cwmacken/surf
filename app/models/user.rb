@@ -17,7 +17,7 @@ class User
 
 
 	# i have no idea what this does 
-	def authenticate
+	def authenticate(password)
 			self.hashed_password ==
 				BCrypt::Engine.hash_secret(password, self.salt)
 	end

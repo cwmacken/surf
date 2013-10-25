@@ -4,6 +4,8 @@ class Board
 	
 	field :length, type: Float
 
+	field :volume, type: Float	
+
 	#field :noseWidth6, type: Float
 	field :noseWidth12, type: Float
 	#field :tailWidth24, type: Float
@@ -39,4 +41,8 @@ class Board
 	field :railType, type: String
 	field :tailType, type: String
 	field :fins, type: String
+	field :glassTop, type: String
+	field :glassBottom, type: String
+
+	field :specialComments, type: String	
 end

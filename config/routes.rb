@@ -1,4 +1,6 @@
 Surf::Application.routes.draw do
+  root 'users#new'
+
   resources :boards
 
 
@@ -6,6 +8,7 @@ Surf::Application.routes.draw do
   get 'users/new' => 'users#new'
   post 'users' => 'users#create'
 
-  get 'authentications/new' => 'users#new'
+  get 'authentications/new' => 'authentications#new'
   post 'authentications' => 'authentications#create'
+  delete 'authentications' => 'authentications#destroy'
 end

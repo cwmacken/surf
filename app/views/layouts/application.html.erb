@@ -7,6 +7,13 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<div>
+	<button ><a href='/boards/'>Boards</a></button>
+	<button ><a href='/boards/new'>New Board</a></button>
+	<button ><a href='/users/new'>New Login</a></button>
+	<button ><a href='/authentications/new'>Sign In</a></button>
+	<%= button_to "log out", "/authentications/", method: :delete %>
+</div>
 
 <%= yield %>
 
