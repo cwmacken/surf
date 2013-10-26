@@ -16,7 +16,7 @@ class AuthenticationsController < ApplicationController
 			#this is wherewe are authenticating the user
 			if user.authenticate(params[:user][:password])
 				session[:user_id] = user.id 
-				redirect_to "/boards/new"
+				redirect_to "/boards"
 
 			else
 				flash.now.alert = "Sign in yo"

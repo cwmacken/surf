@@ -17,3 +17,13 @@ end
 			redirect_to authentications_url unless current_user
 	end
 end
+
+
+  def authorize
+    redirect_to "/authentications/new",  :notice => "Y U NO LOGIN??" if current_user.nil?
+  end 
+
+
+  def show
+    # doesn't need to assign the flash notice to the template, that's done automatically
+  end

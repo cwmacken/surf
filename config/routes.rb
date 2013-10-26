@@ -1,5 +1,5 @@
 Surf::Application.routes.draw do
-  root 'users#new'
+  root 'authentications#new'
 
   resources :boards
 

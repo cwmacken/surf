@@ -1,4 +1,8 @@
 class BoardsController < ApplicationController
+
+	before_action :authorize
+
+
 	def index 
 		@boards = Board.all
 	end 

@@ -1,5 +1,9 @@
 <%= session[:user_id] %><br>
 
+<% if flash[:notice] %>
+    <div class="notice"><%= flash[:notice] %></div>
+  <% end %>
+
 <ul>
 	<%= form_for @board do |boarddata| %>
 	<li>
