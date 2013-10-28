@@ -9,7 +9,13 @@ class UsersController < ApplicationController
 
 	# why do we need the create??????
 	def create
-		@user = User.create(params[:user].permit(:email, :password, :password_confirmation))
-		redirect_to action:"new"
+		@user = User.create(params[:user].permit(:email, :password, :password_confirmation, :shaper))
+		if @user.save
+ 			session[:user_id] = @user.id
+ 			redirect_to '/boards/new', notice: "Thank you for signing up!"
+ 		else
+			redirect_to action:"new"
+		end
 	end 
 end
+

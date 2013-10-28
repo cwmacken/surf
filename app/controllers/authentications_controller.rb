@@ -1,5 +1,5 @@
-class AuthenticationsController < ApplicationController
-		before_action :authenticate_user, only:[:destroy]
+class AuthenticationsController < ApplicationController 
+	before_action :authenticate_user, only:[:destroy]
 
 		def new 
 			#are they logged in???- lorin

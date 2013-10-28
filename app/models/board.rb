@@ -1,5 +1,6 @@
 class Board
 	include Mongoid::Document
+
 	field :style, type: String
 	
 	field :length, type: Float
@@ -45,4 +46,7 @@ class Board
 	field :glassBottom, type: String
 
 	field :specialComments, type: String	
+
+	belongs_to :customer, class_name:"User"
+	#belongs_to :producer, class_name:"User"
 end

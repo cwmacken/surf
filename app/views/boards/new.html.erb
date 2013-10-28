@@ -1,8 +1,4 @@
-<%= session[:user_id] %><br>
 
-<% if flash[:notice] %>
-    <div class="notice"><%= flash[:notice] %></div>
-  <% end %>
 
 <ul>
 	<%= form_for @board do |boarddata| %>
@@ -107,7 +103,7 @@
 	<%= boarddata.text_field :glassTop %>
 	</li>
 	<li>
-	<%= boarddata.label :glassBottom ,"GlASS BOTTOM"%>
+	<%= boarddata.label :glassBottom ,"GLASS BOTTOM"%>
 	<%= boarddata.text_field :glassBottom %>
 	</li>
 	<li></li>

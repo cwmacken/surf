@@ -14,9 +14,7 @@
 </p>
 	<button ><a href='/users/new'>Sign Up</a></button>
 
-	<%= link_to_if(@current_user.nil?, "Login", { controller: "sessions", action: "new" }) %>
-# If the user isn't logged in...
-# => <a href="/sessions/new/">Login</a>
+	
 
 <% end %>
 

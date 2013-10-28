@@ -4,11 +4,16 @@ require 'bcrypt'
 class User
 	include Mongoid::Document
 
+	has_many :boards
+
 	attr_accessor :password, :password_confirmation
 
 	field :email, type: String
 	field :salt, type: String
 	field :hashed_password, type: String
+	field :shaper, type: Boolean
+
+	#is_producer boolen
 
 	before_save :thisMethodCanBeWhateverIWantItToBe_Potato
 	validates :email, presence: true
