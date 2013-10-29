@@ -2,6 +2,8 @@ Surf::Application.routes.draw do
   root 'users#homepage'
 
   resources :boards
+  post 'boards/order' => 'boards#order'
+
   get 'users/homepage' => 'users#homepage'
 
   # what does a get and post do???

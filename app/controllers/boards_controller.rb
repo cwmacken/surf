@@ -27,6 +27,11 @@ class BoardsController < ApplicationController
 		redirect_to boards_url
 	end
 
+	def order
+		#Board.find(params[:id])
+		redirect_to "/boards/order"
+	end 
+
 
 
 end

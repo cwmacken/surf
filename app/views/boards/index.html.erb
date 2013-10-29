@@ -27,6 +27,8 @@
 		<th>Glass Top</th>
 		<th>Glass Bottom</th>
 		<th>Special Comments</th>
+		<th>Delete???</th>
+		<th>Order</th>
 	</tr>
 	<% @boards.each do |boarddata|%>	
 	<tr>
@@ -58,8 +60,10 @@
 		 <td><%= button_to "X", {action:"destroy", id:boarddata.id},
        {method: :delete, data:{confirm:"ARE YOU SURE YOU WANT TO DELETE THIS BOARD?"}, :class => "mybutton"}
         %></td>
+         <td><%= button_to "ORDER", {action:"order", id:boarddata.id},
+       {method: :get, data:{confirm:"ORDER TIME"}, :class => "mybutton"}
+        %></td>
 	</tr>
 	<% end %>	
 
 </table>
-
