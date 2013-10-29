@@ -1,0 +1,68 @@
+<table>
+
+
+	<tr>
+		<th>Type</th>
+		<th>Length</th>
+		<th>Volume</th>
+		<th>Nose 12" Width</th>
+		<th>Width</th>
+		<th>Wide Point</th>
+		<th>Tail 12" Width</th>
+		<th>Nose 12" Thickness</th>
+		<th>Thickness</th>
+		<th>Tail 12" Thickness</th>
+		<th>Nose Rocker</th>
+		<th>Nose 12" Rocker</th>
+		<th>Tail 12" Rocker</th>
+		<th>Tail Rocker</th>
+		<th>Entry Concave</th>
+		<th>Nose 12" Concave</th>
+		<th>Mid Concave</th>
+		<th>Tail 12" Concave</th>
+		<th>Exit Concave</th>
+		<th>Fins</th>
+		<th>Tail Type</th>
+		<th>Fins Setup</th>
+		<th>Glass Top</th>
+		<th>Glass Bottom</th>
+		<th>Special Comments</th>
+	</tr>
+	
+	<th>
+		<td><%= @board.style %></td>
+		<td><%= @board.length %></td>
+		<td><%= @board.volume %></td>
+		<td><%= @board.noseWidth12 %>"</td>
+		<td><%= @board.width %>"</td>
+		<td><%= @board.widePoint %>"</td>
+		<td><%= @board.tailWidth12 %>"</td>
+		<td><%= @board.thicknessNose12 %>"</td>
+		<td><%= @board.thicknessMid %>"</td>
+		<td><%= @board.thicknessTail12 %>"</td>
+		<td><%= @board.rockerNose %>"</td>
+		<td><%= @board.rockerNose12 %>"</td>
+		<td><%= @board.rockerTail12 %>"</td>
+		<td><%= @board.rockerTail %>"</td>
+		<td><%= @board.concaveNoseEntry %>"</td>
+		<td><%= @board.concaveNose %>"</td>
+		<td><%= @board.concaveMid %>"</td>
+		<td><%= @board.concaveTail %>"</td>
+		<td><%= @board.concaveExit %>"</td>
+		<td><%= @board.railType %></td>
+		<td><%= @board.tailType %></td>
+		<td><%= @board.fins %></td>
+		<td><%= @board.glassTop %></td>
+		<td><%= @board.glassBottom %></td>
+		<td><%= @board.specialComments %></td>
+
+	</th>
+
+</table>
+
+
+
+<%= collection_select(:shaper, :email, User.all, :_id, :email) %>
+
+<%= button_to "ORDER"%>
+

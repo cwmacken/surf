@@ -3,6 +3,7 @@ Surf::Application.routes.draw do
 
   resources :boards
   post 'boards/order' => 'boards#order'
+  get 'boards/order/:id' => 'boards#show'
 
   get 'users/homepage' => 'users#homepage'
 

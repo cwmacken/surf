@@ -28,10 +28,13 @@ class BoardsController < ApplicationController
 	end
 
 	def order
-		#Board.find(params[:id])
-		redirect_to "/boards/order"
-	end 
+		@board = Board.find(params[:id])
+		redirect_to :action => "show", :id =>@board._id
+	 end 
 
+	def show
+		@board = Board.find(params[:id])
+	end
 
 
 end

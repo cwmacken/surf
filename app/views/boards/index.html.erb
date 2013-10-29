@@ -1,4 +1,4 @@
-
+	
 
 <table>
 	<tr>
@@ -61,7 +61,7 @@
        {method: :delete, data:{confirm:"ARE YOU SURE YOU WANT TO DELETE THIS BOARD?"}, :class => "mybutton"}
         %></td>
          <td><%= button_to "ORDER", {action:"order", id:boarddata.id},
-       {method: :get, data:{confirm:"ORDER TIME"}, :class => "mybutton"}
+       {method: :post, data:{confirm:"ORDER TIME"}, :class => "mybutton"}
         %></td>
 	</tr>
 	<% end %>	
