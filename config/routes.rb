@@ -1,4 +1,6 @@
 Surf::Application.routes.draw do
+  resources :users
+
   root 'users#homepage'
 
   resources :boards

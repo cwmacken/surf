@@ -62,7 +62,7 @@
 
 
 
-<%= collection_select(:shaper, :email, User.all, :_id, :email) %>
+<%= collection_select(:shaper, :email, @users,	:_id,:email) %>
 
-<%= button_to "ORDER"%>
 
+<%= button_to "SEND IT BRAH" %>

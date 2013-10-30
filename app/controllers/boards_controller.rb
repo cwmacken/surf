@@ -34,6 +34,7 @@ class BoardsController < ApplicationController
 
 	def show
 		@board = Board.find(params[:id])
+		@users = User.where(shaper: true)
 	end
 
 
