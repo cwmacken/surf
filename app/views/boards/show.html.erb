@@ -60,9 +60,8 @@
 
 </table>
 
+<p> PICK YOUR SHAPER </p>
 
-
-<%= collection_select(:shaper, :email, @users,	:_id,:email) %>
-
-
-<%= button_to "SEND IT BRAH" %>
+<% @users.each do |e| %>
+ 	 <%= link_to "#{e.email}", :action =>"assignShaper", recipient: e.email %>
+<% end %>

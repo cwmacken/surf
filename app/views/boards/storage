@@ -1,0 +1,25 @@
+<%= form_for @user do |f| %>
+
+f.
+
+ => f.object.email
+
+ :email,
+<% end %>
+
+
+<!-- 
+
+<%= button_to "SEND IT BRAH", action:"shaperEmail", method: :post,:email => "users@example.com" data:{confirm:"we're pretty sure he got it..... or maybe he just doesn't like you", :class => "mybutton"}%>
+
+ -->
+
+
+<!-- 
+<%= collection_select(:shaper, :email, @users, :_id, :email, :include_blank => false) %> -->
+
+  def shaper_email(user)#I need to send it to 2 people
+  	@user = user
+  	@url = 'http://example.com/login'
+  	mail(to: @user.email, subject: 'Welcome to My Awesome Site')
+  end

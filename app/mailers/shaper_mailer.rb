@@ -1,4 +1,4 @@
-class UserMailer < ActionMailer::Base
+class ShaperMailer < ActionMailer::Base
   include Mongoid::Document
   default from: "notifications@example.com"
 
@@ -10,4 +10,3 @@ class UserMailer < ActionMailer::Base
 
 
 end
-

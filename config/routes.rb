@@ -6,6 +6,7 @@ Surf::Application.routes.draw do
   resources :boards
   post 'boards/order' => 'boards#order'
   get 'boards/order/:id' => 'boards#show'
+  post 'boards/order/:id' => 'boards#assignShaper'
 
   get 'users/homepage' => 'users#homepage'
 

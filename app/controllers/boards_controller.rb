@@ -12,6 +12,18 @@ class BoardsController < ApplicationController
 		@board = Board.new
 		#session[:user_id]= "5269b05a436f6e240f140000"
 	end
+	def assignShaper
+		redirect_to boards_url
+	end
+	# def shaperEmail(recipient)
+	# 	@user= recipient
+	# 	UserMailer.shaper_email(@user).deliver
+	# 	redirect_to '/boards/new', notice: "Thank you for signing up!"
+	# end 
+	def show
+		@board = Board.find(params[:id])
+		@users = User.where(shaper: true)
+	end
 
 	def create
 		#b = board.new()
@@ -30,12 +42,11 @@ class BoardsController < ApplicationController
 	def order
 		@board = Board.find(params[:id])
 		redirect_to :action => "show", :id =>@board._id
-	 end 
-
-	def show
-		@board = Board.find(params[:id])
-		@users = User.where(shaper: true)
 	end
+
+
+	 
+	
 
 
 end
