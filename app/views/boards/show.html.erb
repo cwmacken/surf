@@ -63,5 +63,34 @@
 <p> PICK YOUR SHAPER </p>
 
 <% @users.each do |e| %>
- 	 <%= link_to "#{e.email}", :action =>"assignShaper", recipient: e.email %>
-<% end %>
+ 	 <%= link_to "#{e.email}","#{@board.id}/assign_shaper/#{e.id}", :action =>"assignShaper" %>
+<% end %>	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

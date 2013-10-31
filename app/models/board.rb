@@ -47,6 +47,7 @@ class Board
 
 	field :specialComments, type: String	
 
-	belongs_to :customer, class_name:"User"
-	#belongs_to :producer, class_name:"User"
+	belongs_to :customer, class_name:"User", inverse_of: :bought_boards
+	belongs_to :producer, class_name:"User", inverse_of: :produced_boards
+
 end

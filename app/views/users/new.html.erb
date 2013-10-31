@@ -2,6 +2,18 @@
 <p>SIGN UP YO!</p>
 	<%= form_for @user do |user| %>
 <p>
+	<%= user.label :name, "Name"%>
+	<%= user.text_field :name%>
+</p>
+<p>
+	<%= user.label :height, "Height"%>
+	<%= user.text_field :height%>
+</p>
+<p>
+	<%= user.label :skillLevel, "Skill Level"%>
+	<%= user.text_field :skillLevel%>
+</p>
+<p>
 	<%= user.label :email, "Email"%>
 	<%= user.text_field :email%>
 </p>

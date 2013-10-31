@@ -1,1 +1,27 @@
-<p>this is the homepage</p>
+<div class="page_container">
+<h1>Editing Question</h1>
+
+<%= form_for :user do |f| %>
+  <p>
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </p>
+
+  <p>
+    <%= f.label :height %><br>
+    <%= f.text_field :height %>
+  </p>
+  <p>
+    <%= f.label :skillLevel %><br>
+    <%= f.text_field :skillLevel %>
+  </p>
+<p>
+    <%= f.label :email %><br>
+    <%= f.text_field :email %>
+  </p>
+
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
+

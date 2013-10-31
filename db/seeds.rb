@@ -22,3 +22,5 @@
 # u.scores.create(test_name:"SAT", test_score:1360)
 # u.scores.create(test_name:"ACT", test_score:33)
 # u.scores.create(test_name:"AFQT", test_score:87)
+
+

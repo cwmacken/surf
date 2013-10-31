@@ -4,14 +4,18 @@ require 'bcrypt'
 class User
 	include Mongoid::Document
 
-	has_many :boards
+	 has_many :produced_boards, class_name:"Board", inverse_of: :producer
+	 has_many :bought_boards, class_name:"Board", inverse_of: :customer
 
 	attr_accessor :password, :password_confirmation
-
+	field :name, type: String
+	field :height, type: Float
+	field :skillLevel, type: String
 	field :email, type: String
 	field :salt, type: String
 	field :hashed_password, type: String
 	field :shaper, type: String
+	
 
 	#is_producer boolen
 

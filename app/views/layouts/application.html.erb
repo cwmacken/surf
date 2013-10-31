@@ -11,6 +11,7 @@
 
 	<button ><a href='/boards/'>Boards</a></button>
 	<button ><a href='/boards/new'>New Board</a></button>
+  <button ><a href='/users/edit'>Edit</a></button>
 	<button ><a href='/users/homepage'>Home</a></button>
 	<button><%= link_to_if( current_user.nil?, "Sign In", "/authentications/new") do
      link_to( "Sign Out", "/authentications/",{method: :delete})

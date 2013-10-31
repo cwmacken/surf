@@ -12,7 +12,10 @@ class BoardsController < ApplicationController
 		@board = Board.new
 		#session[:user_id]= "5269b05a436f6e240f140000"
 	end
-	def assignShaper
+	def assign_shaper
+		@board = Board.find(params[:id])
+		@board.producer = User.find(params[:producer_id])
+		@board.save		
 		redirect_to boards_url
 	end
 	# def shaperEmail(recipient)
