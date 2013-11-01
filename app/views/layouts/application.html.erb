@@ -7,27 +7,25 @@
 </head>
 <body>
   <div class="col-md-12">
-    <ul class="nav nav-pills">
-      <li class="active"><a href='/boards/'>Boards</a></li>
-      <li></li>
-      <li></li>
-    </ul>
-    <div class="header">
-
-    	<button ></button>
-    	<button ><a href='/boards/new'>New Board</a></button>
-      <button><%= link_to "Edit Profile", edit_user_path(session[:user_id])%></button>
-    	<button ><a href='/users/homepage'>Home</a></button>
-    	<button><%= link_to_if( current_user.nil?, "Sign In", "/authentications/new") do
+    <ul class="nav nav-pills" id="header">
+      <li><a class="headerLink"href='/boards/'>Boards</a></li>
+      <li ><%= link_to "Edit Profile", edit_user_path(session[:user_id]), class:"headerLink"%></li>
+      <li ><%= link_to_if( current_user.nil?, "Sign In", "/authentications/new", class:"headerLink") do
          link_to( "Sign Out", "/authentications/",{method: :delete})
        end
-    %></button>
-    </div>
-    <%= session[:user_id] %><br>
-    <% if flash[:notice].present? %>
-    <%= flash[:notice] %>
-    <% end %>
-    <%= yield %>
+    %></li>
+      <li><a class="headerLink" href='/boards/new'>New Board</a></li>
+      <li><a class="headerLink" href='/users/homepage'>Home</a></li>
+    </ul>
   </div>
+  <div class="row">
+    <div class="col-md-6 col-md-offset-1">  
+      <%= session[:user_id] %><br>
+      <% if flash[:notice].present? %>
+      <%= flash[:notice] %>
+      <% end %>
+    </div>
+  </div>
+    <%= yield %>
 </body>
 </html>

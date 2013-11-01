@@ -1,18 +1,81 @@
 @import 'bootstrap';
 
 $aoi: #69d2e7;
-$clean: #a7dbd8;
-$beach: #e0e4cc;
-$giant: #f38630;
-$unreal: #fa6900;
+$main: rgba(0,0,0,.9);
+$second: rgba(255,255,255,.9);
+$secondTextBox: rgba(255,255,255,.5);
+$lightMain: rgba(93,93,93,.9);
+$lightSecond: rgba(176,176,176,.9);
+$highlight: rgba(255,0,0,.5);
 
 $mainFontFam: helvetica, arial, sans-serif;
 
 body{
-	background-color: $clean;
+	background-image: url('WAVE.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
-.header{
+#header{
 	font-family: $mainFontFam;
+	background-color: $highlight;
+	color: $main;
+	font-weight: bold;
 
+	border-radius: 5px;
+}
+
+.headerLink{
+	color:$main;
+}
+
+
+.btnmain{
+	font-family: $mainFontFam;
+	background-color: $highlight;
+	color: $main;
+	font-weight: bold;
+	border-radius: 5px;	
+	border: 0px;
+}
+
+.btnLink{
+	color:$main;
+}
+
+.inputTextAlt{
+	color:$second;
+}
+
+.inputReset{
+	border-radius: 5px;
+	border:0px;
+	background-color: $secondTextBox; 
+}
+
+.listFix{
+	list-style-type: none;
+}
+
+.brand{
+	color: $highlight;
+	font-family: $mainFontFam;
+	font-weight: bold;
+	font-size: 10em;
+	margin-top: .5em
+
+}
+
+.pageHeader{
+	color: $highlight;
+	font-family: $mainFontFam;
+	font-weight: bold;
+	font-size: 5em;
+}
+
+.tableText{
+	color:$main;
+	font-family: $mainFontFam;
+	font-weight: bold;
+	font-size: 1em;
 }

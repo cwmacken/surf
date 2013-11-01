@@ -3,16 +3,16 @@
 
 <p>
 	<%= user.label :email, "Email"%>
-	<%= user.text_field :email%>
+	<%= user.text_field :email, class:"inputReset"%>
 </p>
 <p>
 	<%= user.label :password, "Password"%>
-	<%= user.text_field :password%>
+	<%= user.text_field :password, class:"inputReset"%>
 </p>
 <p>
-	<%= user.submit "Login" %>
+	<%= user.submit "Login", class:"btnmain" %>
 </p>
-	<button ><a href='/users/new'>Sign Up</a></button>
+<button class="btnmain"><a class="btnlink" href='/users/new'>Sign Up</a></button>
 
 	
 
