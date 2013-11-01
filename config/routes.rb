@@ -1,5 +1,7 @@
 Surf::Application.routes.draw do
+
   post 'users/:id/edit' => 'users#update'
+  post 'boardsusers/:id/edit' => 'users#update'
   resources :users
 
   root 'users#homepage'

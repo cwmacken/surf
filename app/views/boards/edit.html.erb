@@ -1,0 +1,117 @@
+
+
+<ul>
+	<%= form_for @board do |boarddata| %>
+	<li>
+	<%= boarddata.label :style ,"TYPE OF BOARD"%>
+	<%= boarddata.text_field :style %>
+	</li>
+	<li></li>
+	<li>
+	<%= boarddata.label :length ,"LENGTH"%>
+	<%= boarddata.text_field :length %>
+	</li>
+	<li></li>
+	<li>
+	<%= boarddata.label :volume ,"VOLUME"%>
+	<%= boarddata.text_field :volume %>
+	</li>
+	<li></li>
+	<li>
+	<%= boarddata.label :noseWidth12 ,"NOSE 12\" WIDTH"%>
+	<%= boarddata.text_field :noseWidth12 %>
+	</li>
+	<li>
+	<%= boarddata.label :width ,"WIDTH"%>
+	<%= boarddata.text_field :width %>
+	</li>
+	<li>
+	<%= boarddata.label :widePoint ,"WIDE POINT"%>
+	<%= boarddata.text_field :widePoint %>
+	</li>
+	<li>
+	<%= boarddata.label :Tailwidth12 ,"TAIL 12\"WIDTH"%>
+	<%= boarddata.text_field :tailWidth12 %>
+	</li>
+	<li></li>
+	<li>
+	<%= boarddata.label :thicknessNose12 ,"NOSE 12\" THICKNESS"%>
+	<%= boarddata.text_field :thicknessNose12 %>
+	</li>
+	<li>
+	<%= boarddata.label :thicknessMid ,"THICKNESS"%>
+	<%= boarddata.text_field :thicknessMid %>
+	</li>
+	<li>
+	<%= boarddata.label :thicknessTail12 ,"TAIL 12\" THICKNESS"%>
+	<%= boarddata.text_field :thicknessTail12 %>
+	</li>
+	<li></li>
+	<li>
+	<%= boarddata.label :rockerNose ,"NOSE ROCKER"%>
+	<%= boarddata.text_field :rockerNose %>
+	</li>
+	<li>
+	<%= boarddata.label :rockerNose12 ,"NOSE ROCKER 12\" "%>
+	<%= boarddata.text_field :rockerNose12 %>
+	</li>
+	<li>
+	<%= boarddata.label :rockerTail12 ,"TAIL ROCKER 12\""%>
+	<%= boarddata.text_field :rockerTail12 %>
+	</li>
+	<li>
+	<%= boarddata.label :rockerTail ,"TAIL ROCKER"%>
+	<%= boarddata.text_field :rockerTail %>
+	</li>
+	<li></li>
+	<li>
+	<%= boarddata.label :concaveNoseEntry ,"NOSE ENTRY CONCAVE"%>
+	<%= boarddata.text_field :concaveNoseEntry %>
+	</li>
+	<li>
+	<%= boarddata.label :concaveNose ,"NOSE CONCAVE"%>
+	<%= boarddata.text_field :concaveNose %>
+	</li>
+	<li>
+	<%= boarddata.label :concaveMid ,"WIDE POINT CONCAVE "%>
+	<%= boarddata.text_field :concaveMid %>
+	</li>
+	<li>
+	<%= boarddata.label :concaveTail ,"TAIL CONCAVE"%>
+	<%= boarddata.text_field :concaveTail %>
+	</li>
+	<li>
+	<%= boarddata.label :concaveExit ,"EXIT CONCAVE"%>
+	<%= boarddata.text_field :concaveExit %>
+	</li>
+	<li></li>
+	<li>
+	<%= boarddata.label :railType ,"RAIL TYPE"%>
+	<%= boarddata.text_field :railType %>
+	</li>
+	<li>
+	<%= boarddata.label :TailType ,"TAIL TYPE"%>
+	<%= boarddata.text_field :tailType %>
+	</li>
+	<li>
+	<%= boarddata.label :fins ,"FINS"%>
+	<%= boarddata.text_field :fins %>
+	</li>
+	<li></li>
+	<li>
+	<%= boarddata.label :glassTop ,"GLASSTOP"%>
+	<%= boarddata.text_field :glassTop %>
+	</li>
+	<li>
+	<%= boarddata.label :glassBottom ,"GLASS BOTTOM"%>
+	<%= boarddata.text_field :glassBottom %>
+	</li>
+	<li></li>
+	<li>
+	<%= boarddata.label :specialComments ,"COMMENTS"%>
+	<%= boarddata.text_area :specialComments, cols:"30", rows:"10" %>
+	</li>
+	<%= boarddata.submit %>
+	<% end %>	
+	</li>
+</ul>

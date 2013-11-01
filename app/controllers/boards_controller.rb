@@ -47,6 +47,21 @@ class BoardsController < ApplicationController
 		redirect_to :action => "show", :id =>@board._id
 	end
 
+	def edit
+		@board = Board.find(params[:id])
+	end
+
+	def update
+		@board = Board.find(params[:id])
+
+  		if @board.update_attributes(params[:board].permit(:style, :length, :volume, :noseWidth12, :width, :widePoint, :tailWidth12, :thicknessNose12, :thicknessMid, :thicknessTail12, :rockerNose, :rockerNose12, :rockerTail12, :rockerTail, :concaveNoseEntry, :concaveNose, :concaveMid, :concaveTail, :concaveExit, :railType, :tailType, :fins, :glassTop, :glassBottom, :specialComments))
+			redirect_to boards_url
+  		else
+  			render 'edit'
+  	end
+	end
+
+
 
 	 
 	

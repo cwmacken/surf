@@ -64,7 +64,7 @@
          <td><%= button_to "ORDER", {action:"order", id:boarddata.id},
        {method: :post, data:{confirm:"ORDER TIME"}, :class => "mybutton"}
         %></td>
-         <button><%= link_to "Edit Board", edit_user_path(session[:user_id])%></button>
+         <td><button><%= link_to "Edit Board", edit_board_path(id:boarddata.id)%></button></td>
 	</tr>
 	<% end %>	
 
@@ -129,6 +129,7 @@
 		 <td><%= button_to "X", {action:"destroy", id:boarddata.id},
        {method: :delete, data:{confirm:"ARE YOU SURE YOU WANT TO DELETE THIS BOARD?"}, :class => "mybutton"}
         %></td>
+        <td><button><%= link_to "Edit Board", edit_board_path(id:boarddata.id)%></button></td>
 
 	</tr>
 	<% end %>	

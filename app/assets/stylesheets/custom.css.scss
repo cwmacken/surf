@@ -1,0 +1,18 @@
+@import 'bootstrap';
+
+$aoi: #69d2e7;
+$clean: #a7dbd8;
+$beach: #e0e4cc;
+$giant: #f38630;
+$unreal: #fa6900;
+
+$mainFontFam: helvetica, arial, sans-serif;
+
+body{
+	background-color: $clean;
+}
+
+.header{
+	font-family: $mainFontFam;
+
+}

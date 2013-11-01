@@ -6,23 +6,28 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<div>
+  <div class="col-md-12">
+    <ul class="nav nav-pills">
+      <li class="active"><a href='/boards/'>Boards</a></li>
+      <li></li>
+      <li></li>
+    </ul>
+    <div class="header">
 
-	<button ><a href='/boards/'>Boards</a></button>
-	<button ><a href='/boards/new'>New Board</a></button>
-  <!-- <button ><a href='/users/edit'>Edit</a></button> -->
-  <button><%= link_to "Edit Profile", edit_user_path(session[:user_id])%></button>
-	<button ><a href='/users/homepage'>Home</a></button>
-	<button><%= link_to_if( current_user.nil?, "Sign In", "/authentications/new") do
-     link_to( "Sign Out", "/authentications/",{method: :delete})
-   end
-%></button>
-</div>
-<%= session[:user_id] %><br>
-<% if flash[:notice].present? %>
-<%= flash[:notice] %>
-<% end %>
-<%= yield %>
-
+    	<button ></button>
+    	<button ><a href='/boards/new'>New Board</a></button>
+      <button><%= link_to "Edit Profile", edit_user_path(session[:user_id])%></button>
+    	<button ><a href='/users/homepage'>Home</a></button>
+    	<button><%= link_to_if( current_user.nil?, "Sign In", "/authentications/new") do
+         link_to( "Sign Out", "/authentications/",{method: :delete})
+       end
+    %></button>
+    </div>
+    <%= session[:user_id] %><br>
+    <% if flash[:notice].present? %>
+    <%= flash[:notice] %>
+    <% end %>
+    <%= yield %>
+  </div>
 </body>
 </html>
