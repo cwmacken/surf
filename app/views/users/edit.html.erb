@@ -1,23 +1,48 @@
-kjhgkjfdkljfdfkljhfdskljhfdskljfdskjlhfdlkjfdkjfdskj
+edit.html.erb
 
 <div class="page_container">
-<h1>Editing Question</h1>
+<h1>PROFILE INFO</h1>
 
-<%= form_for :question do |f| %>
+<%= form_for :user do |f| %>
   <p>
-    <%= f.label :title %><br>
-    <%= f.text_field :title %>
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
   </p>
-
   <p>
-    <%= f.label :body %><br>
-    <%= f.text_area :body %>
+    <%= f.label :height %><br>
+    <%= f.text_field :height %>
   </p>
-
+  <p>
+    <%= f.label :weight %><br>
+    <%= f.text_field :weight %>
+  </p>
+  <p>
+    <%= f.label :skillLevel %><br>
+    <%= f.text_field :skillLevel %>
+  </p>
+  <p>
+    <%= f.label :email %><br>
+    <%= f.text_field :email %>
+  </p>
+  <p>
+    <%= f.label :label %><br>
+    <%= f.text_field :label %>
+  </p>
+  <p>
+    <%= f.label :website %><br>
+    <%= f.text_field :website %>
+  </p>
+  <p>
+    <%= f.label :address %><br>
+    <%= f.text_field :address %>
+  </p>
+  <p>
+    <%= f.label :phone %><br>
+    <%= f.text_field :phone %>
+  </p>
   <p>
     <%= f.submit %>
   </p>
 <% end %>
 
-<%= link_to 'Back', questions_path %>
 </div>

@@ -1,4 +1,5 @@
 Surf::Application.routes.draw do
+  post 'users/:id/edit' => 'users#update'
   resources :users
 
   root 'users#homepage'
@@ -17,7 +18,7 @@ Surf::Application.routes.draw do
   post 'users' => 'users#create'
   #get 'users/edit' => 'users/#edit'
   #post 'users' => 'users/#edit'
-  post'users/edit' => 'users#update'
+  
 
 
 

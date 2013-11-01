@@ -10,11 +10,17 @@ class User
 	attr_accessor :password, :password_confirmation
 	field :name, type: String
 	field :height, type: Float
+	field :weight, type: Float
 	field :skillLevel, type: String
 	field :email, type: String
 	field :salt, type: String
 	field :hashed_password, type: String
 	field :shaper, type: String
+
+	field :label, type: String
+	field :website, type: String
+	field :address, type: String
+	field :phone, type: String
 	
 
 	#is_producer boolen

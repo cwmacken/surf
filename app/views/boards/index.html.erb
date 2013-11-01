@@ -29,6 +29,7 @@
 		<th>Special Comments</th>
 		<th>Delete???</th>
 		<th>Order</th>
+		<th>Edit</th>
 	</tr>
 	<% @current_user.bought_boards.each do |boarddata|%>	
 	<tr>
@@ -63,6 +64,7 @@
          <td><%= button_to "ORDER", {action:"order", id:boarddata.id},
        {method: :post, data:{confirm:"ORDER TIME"}, :class => "mybutton"}
         %></td>
+         <button><%= link_to "Edit Board", edit_user_path(session[:user_id])%></button>
 	</tr>
 	<% end %>	
 
@@ -95,8 +97,7 @@
 		<th>Glass Top</th>
 		<th>Glass Bottom</th>
 		<th>Special Comments</th>
-		<th>Delete???</th>
-		<th>Order</th>
+		<th>Delete???</th>	
 	</tr>
 	<% @current_user.produced_boards.each do |boarddata|%>	
 	<tr>
@@ -128,9 +129,7 @@
 		 <td><%= button_to "X", {action:"destroy", id:boarddata.id},
        {method: :delete, data:{confirm:"ARE YOU SURE YOU WANT TO DELETE THIS BOARD?"}, :class => "mybutton"}
         %></td>
-         <td><%= button_to "ORDER", {action:"order", id:boarddata.id},
-       {method: :post, data:{confirm:"ORDER TIME"}, :class => "mybutton"}
-        %></td>
+
 	</tr>
 	<% end %>	
 
