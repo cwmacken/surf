@@ -1,4 +1,4 @@
-class Board
+	class Board
 	include Mongoid::Document
 
 	field :style, type: String

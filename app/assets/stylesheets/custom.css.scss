@@ -29,6 +29,14 @@ body{
 	color:$main;
 }
 
+.headerLink:visited {
+	color: $main;
+	text-decoration: none;
+}
+
+a:visited {
+	color:$main;
+}
 
 .btnmain{
 	font-family: $mainFontFam;
@@ -42,9 +50,19 @@ body{
 .btnLink{
 	color:$main;
 }
+#signUp{
+	color:$main;	
+}
+
+#signUp:hover{
+	background-color: $second;
+	text-decoration: none;	
+}
 
 .inputTextAlt{
-	color:$second;
+	color:$main;
+	background-color: $secondTextBox;
+	border-radius: 5px;
 }
 
 .inputReset{

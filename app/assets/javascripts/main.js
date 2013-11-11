@@ -1,3 +1,3 @@
-function hideLogout(){
-	 document.getElementsByClassName('logoutBtn').style.display = "none";
-}
+// function hideLogout(){
+// 	 document.getElementsByClassName('logoutBtn').style.display = "none";
+// }
