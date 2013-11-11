@@ -1,108 +1,156 @@
-
-
-<ul>
-	<%= form_for @board do |boarddata| %>
-	<li>
-	<%= boarddata.label :style ,"TYPE OF BOARD"%>
-	<%= boarddata.text_field :style %>
-	</li>
-	<li>
-	<%= boarddata.label :length ,"LENGTH"%>
-	<%= boarddata.text_field :length %>
-	</li>
-	<li>
-	<%= boarddata.label :volume ,"VOLUME"%>
-	<%= boarddata.text_field :volume %>
-	</li>
-	<li>
-	<%= boarddata.label :noseWidth12 ,"NOSE 12\" WIDTH"%>
-	<%= boarddata.text_field :noseWidth12 %>
-	</li>
-	<li>
-	<%= boarddata.label :width ,"WIDTH"%>
-	<%= boarddata.text_field :width %>
-	</li>
-	<li>
-	<%= boarddata.label :widePoint ,"WIDE POINT"%>
-	<%= boarddata.text_field :widePoint %>
-	</li>
-	<li>
-	<%= boarddata.label :Tailwidth12 ,"TAIL 12\"WIDTH"%>
-	<%= boarddata.text_field :tailWidth12 %>
-	</li>
-	<li>
-	<%= boarddata.label :thicknessNose12 ,"NOSE 12\" THICKNESS"%>
-	<%= boarddata.text_field :thicknessNose12 %>
-	</li>
-	<li>
-	<%= boarddata.label :thicknessMid ,"THICKNESS"%>
-	<%= boarddata.text_field :thicknessMid %>
-	</li>
-	<li>
-	<%= boarddata.label :thicknessTail12 ,"TAIL 12\" THICKNESS"%>
-	<%= boarddata.text_field :thicknessTail12 %>
-	</li>
-	<li>
-	<%= boarddata.label :rockerNose ,"NOSE ROCKER"%>
-	<%= boarddata.text_field :rockerNose %>
-	</li>
-	<li>
-	<%= boarddata.label :rockerNose12 ,"NOSE ROCKER 12\" "%>
-	<%= boarddata.text_field :rockerNose12 %>
-	</li>
-	<li>
-	<%= boarddata.label :rockerTail12 ,"TAIL ROCKER 12\""%>
-	<%= boarddata.text_field :rockerTail12 %>
-	</li>
-	<li>
-	<%= boarddata.label :rockerTail ,"TAIL ROCKER"%>
-	<%= boarddata.text_field :rockerTail %>
-	</li>
-	<li>
-	<%= boarddata.label :concaveNoseEntry ,"NOSE ENTRY CONCAVE"%>
-	<%= boarddata.text_field :concaveNoseEntry %>
-	</li>
-	<li>
-	<%= boarddata.label :concaveNose ,"NOSE CONCAVE"%>
-	<%= boarddata.text_field :concaveNose %>
-	</li>
-	<li>
-	<%= boarddata.label :concaveMid ,"WIDE POINT CONCAVE "%>
-	<%= boarddata.text_field :concaveMid %>
-	</li>
-	<li>
-	<%= boarddata.label :concaveTail ,"TAIL CONCAVE"%>
-	<%= boarddata.text_field :concaveTail %>
-	</li>
-	<li>
-	<%= boarddata.label :concaveExit ,"EXIT CONCAVE"%>
-	<%= boarddata.text_field :concaveExit %>
-	</li>
-	<li>
-	<%= boarddata.label :railType ,"RAIL TYPE"%>
-	<%= boarddata.text_field :railType %>
-	</li>
-	<li>
-	<%= boarddata.label :TailType ,"TAIL TYPE"%>
-	<%= boarddata.text_field :tailType %>
-	</li>
-	<li>
-	<%= boarddata.label :fins ,"FINS"%>
-	<%= boarddata.text_field :fins %>
-	</li>
-	<li>
-	<%= boarddata.label :glassTop ,"GLASSTOP"%>
-	<%= boarddata.text_field :glassTop %>
-	</li>
-	<li>
-	<%= boarddata.label :glassBottom ,"GLASS BOTTOM"%>
-	<%= boarddata.text_field :glassBottom %>
-	</li>
-	<li>
-	<%= boarddata.label :specialComments ,"COMMENTS"%>
-	<%= boarddata.text_area :specialComments, cols:"30", rows:"10" %>
-	</li>
-	<%= boarddata.submit %>
+<div class="row">
+	<div class="pageHeader col-md-offset-1">
+		Edit
+	</div>
+</div>
+<div class="row orderReview">
+	<br>
+	<ul class="listFix col-md-3 col-md-offset-1 ">
+		<%= form_for @board do |boarddata| %>
+		<li>
+		<%= boarddata.label :style ,"TYPE OF BOARD", class:"inputTextAlt"%>
+		<%= boarddata.text_field :style, class:"inputReset"  %>
+		</li>
+		<br>
+		<li>
+		<%= boarddata.label :length ,"LENGTH", class:"inputTextAlt"%>
+		<%= boarddata.text_field :length, class:"inputReset"  %>
+		</li>
+		<br>
+		<li>
+		<%= boarddata.label :volume ,"VOLUME", class:"inputTextAlt"%>
+		<%= boarddata.text_field :volume, class:"inputReset"  %>
+		</li>
+	</ul>
+	<ul class="listFix col-md-3">
+		<li>
+		<%= boarddata.label :noseWidth12 ,"NOSE 12\" WIDTH", class:"inputTextAlt"%>
+		<%= boarddata.text_field :noseWidth12, class:"inputReset"  %>
+		</li>
+		<br>
+		<li>
+		<%= boarddata.label :width ,"WIDTH", class:"inputTextAlt"%>
+		<%= boarddata.text_field :width, class:"inputReset"  %>
+		</li>
+		<br>
+		<li>
+		<%= boarddata.label :widePoint ,"WIDE POINT", class:"inputTextAlt"%>
+		<%= boarddata.text_field :widePoint, class:"inputReset"  %>
+		</li>
+		<br>
+		<li>
+		<%= boarddata.label :Tailwidth12 ,"TAIL 12\"WIDTH", class:"inputTextAlt"%>
+		<%= boarddata.text_field :tailWidth12, class:"inputReset"  %>
+		</li>
+	</ul>
+	<ul class="listFix col-md-4">
+		<li>
+		<%= boarddata.label :thicknessNose12 ,"NOSE 12\" THICKNESS", class:"inputTextAlt"%>
+		<%= boarddata.text_field :thicknessNose12, class:"inputReset"  %>
+		</li>
+		<br>
+		<li>
+		<%= boarddata.label :thicknessMid ,"THICKNESS", class:"inputTextAlt"%>
+		<%= boarddata.text_field :thicknessMid, class:"inputReset"  %>
+		</li>
+		<br>
+		<li>
+		<%= boarddata.label :thicknessTail12 ,"TAIL 12\" THICKNESS", class:"inputTextAlt"%>
+		<%= boarddata.text_field :thicknessTail12, class:"inputReset"  %>
+		</li>
+	</ul>
+</div>
+<div class="row">
+	<br>
+	<br>
+	<ul class="listFix col-md-3 col-md-offset-1">
+		<li>
+		<%= boarddata.label :rockerNose ,"NOSE ROCKER", class:"inputTextAlt"%>
+		<%= boarddata.text_field :rockerNose, class:"inputReset"%>
+		</li>
+		<br>
+		<li>
+		<%= boarddata.label :rockerNose12 ,"NOSE ROCKER 12\"", class:"inputTextAlt"%>
+		<%= boarddata.text_field :rockerNose12, class:"inputReset", :size=>19  %>
+		</li>
+		<br>
+		<li>
+		<%= boarddata.label :rockerTail12 ,"TAIL ROCKER 12\"", class:"inputTextAlt"%>
+		<%= boarddata.text_field :rockerTail12, class:"inputReset"  %>
+		</li>
+		<br>
+		<li>
+		<%= boarddata.label :rockerTail ,"TAIL ROCKER", class:"inputTextAlt"%>
+		<%= boarddata.text_field :rockerTail, class:"inputReset"  %>
+		</li>
+	</ul>
+	<ul class="listFix col-md-4">
+		<li>
+		<%= boarddata.label :concaveNoseEntry ,"NOSE ENTRY CONCAVE", class:"inputTextAlt"%>
+		<%= boarddata.text_field :concaveNoseEntry, class:"inputReset"  %>
+		</li>
+		<br>
+		<li>
+		<%= boarddata.label :concaveNose ,"NOSE CONCAVE", class:"inputTextAlt"%>
+		<%= boarddata.text_field :concaveNose, class:"inputReset"  %>
+		</li>
+		<br>
+		<li>
+		<%= boarddata.label :concaveMid ,"WIDE POINT CONCAVE", class:"inputTextAlt"%>
+		<%= boarddata.text_field :concaveMid, class:"inputReset"  %>
+		</li>
+		<br>
+		<li>
+		<%= boarddata.label :concaveTail ,"TAIL CONCAVE", class:"inputTextAlt"  %>
+		<%= boarddata.text_field :concaveTail, class:"inputReset"  %>
+		</li>
+		<br>
+		<li>
+		<%= boarddata.label :concaveExit ,"EXIT CONCAVE", class:"inputTextAlt"  %>
+		<%= boarddata.text_field :concaveExit, class:"inputReset"  %>
+		</li>
+	</ul>
+	<ul class="listFix col-md-3">
+		<li>
+		<%= boarddata.label :railType ,"RAIL TYPE", class:"inputTextAlt" %>
+		<%= boarddata.text_field :railType, class:"inputReset"  %>
+		</li>
+		<br>
+		<li>
+		<%= boarddata.label :TailType ,"TAIL TYPE", class:"inputTextAlt" %>
+		<%= boarddata.text_field :tailType, class:"inputReset"  %>
+		</li>
+		<br>
+		<li>
+		<%= boarddata.label :fins ,"FINS", class:"inputTextAlt" %>
+		<%= boarddata.text_field :fins, class:"inputReset"  %>
+		</li>
+	</ul>
+</div>
+<div class="row">
+	<br>
+	<br>
+	<ul class="listFix col-md-3 col-md-offset-1 ">
+		<li>
+		<%= boarddata.label :glassTop ,"GLASSTOP", class:"inputTextAlt"  %>
+		<%= boarddata.text_field :glassTop, class:"inputReset"  %>
+		</li>
+		<br>
+		<li>
+		<%= boarddata.label :glassBottom ,"GLASS BOTTOM",  class:"inputTextAlt"  %>
+		<%= boarddata.text_field :glassBottom, class:"inputReset"  %>
+		</li>
+		<br>
+		<li>
+		<%= boarddata.submit "                        Save                          ", class:"btnmain"%>
+		</li>
+	</ul>
+	<ul class="listFix col-md-2" >
+		<li>
+		<%= boarddata.label :specialComments ,"COMMENTS",  class:"inputTextAlt" %>
+		<%= boarddata.text_area :specialComments, cols:"93", rows:"6", class:"inputReset"  %>
+		</li>
+	</ul>
+</div>
+	
 	<% end %>	
-	</li>
-</ul>

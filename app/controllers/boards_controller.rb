@@ -16,8 +16,9 @@ class BoardsController < ApplicationController
 	def assign_shaper
 		@board = Board.find(params[:id])
 		@board.producer = User.find(params[:producer_id])
+		@board.ordered = "Ordered"
 		@board.save		
-		redirect_to boards_url
+		redirect_to boards_url,:notice => "Order Placed"
 	end
 	# def shaperEmail(recipient)
 	# 	@user= recipient
@@ -49,6 +50,10 @@ class BoardsController < ApplicationController
 	end
 
 	def edit
+		@board = Board.find(params[:id])
+	end
+
+	def view
 		@board = Board.find(params[:id])
 	end
 

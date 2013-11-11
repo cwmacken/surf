@@ -10,6 +10,7 @@ Surf::Application.routes.draw do
   post 'boards/order' => 'boards#order'
   get 'boards/order/:id' => 'boards#show'
   get 'boards/:id/assign_shaper/:producer_id' => 'boards#assign_shaper'
+  get 'boards/view/:id' => 'boards#view', as:"view_board"
 
   get 'users/homepage' => 'users#homepage'
 

@@ -1,9 +1,5 @@
-<div class="row">
-	<div class="pageHeader col-md-offset-1">
-		Outbound orders
-	</div>
-</div>
-<div class="inputTextAlt tableText col-md-6	 col-md-offset-1">
+
+<div class="inputTextAlt tableText col-md-7	 col-md-offset-1">
 	<table border="1">
 		<tr>
 			<th>Type</th>
@@ -13,9 +9,12 @@
 			<th>Volume</th>
 			<th>Fins</th>
 			<th>Tail Type</th>
-			<th>Delete???</th>
-			<th>Order</th>
+			
+			<th>Details</th>
 			<th>Edit</th>
+			<th>Order</th>
+			<th>Ordered</th>
+			<th>Delete???</th>
 		</tr>
 		<% @current_user.bought_boards.each do |boarddata|%>	
 		<tr>
@@ -26,13 +25,16 @@
 			<td><%= boarddata.volume %></td>
 			<td><%= boarddata.fins %></td>
 			<td><%= boarddata.tailType %></td>
-			 <td><%= button_to "X", {action:"destroy", id:boarddata.id},
-	       {method: :delete, data:{confirm:"ARE YOU SURE YOU WANT TO DELETE THIS BOARD?"}, :class => "mybutton", class:"btnmain"}
-	        %></td>
+			
+	         <td><button class="btnmain"><%= link_to "View Details", view_board_path(boarddata)%></button></td>
+	         <td><button class="btnmain"><%= link_to "Edit Board", edit_board_path(boarddata)%></button></td>
 	         <td><%= button_to "ORDER", {action:"order", id:boarddata.id},
 	       {method: :post, :class => "mybutton", class:"btnmain"}
 	        %></td>
-	         <td><button class="btnmain"><%= link_to "Edit Board", edit_board_path(id:boarddata.id)%></button></td>
+	         <td><%= boarddata.ordered %></td>
+	          <td><%= button_to "X", {action:"destroy", id:boarddata.id},
+	       {method: :delete, data:{confirm:"ARE YOU SURE YOU WANT TO DELETE THIS BOARD?"}, :class => "mybutton", class:"btnmain"}
+	        %></td>
 		</tr>
 		<% end %>
 		</table>

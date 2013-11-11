@@ -45,7 +45,8 @@
 	field :glassTop, type: String
 	field :glassBottom, type: String
 
-	field :specialComments, type: String	
+	field :specialComments, type: String
+	field :ordered, type: String	
 
 	belongs_to :customer, class_name:"User", inverse_of: :bought_boards
 	belongs_to :producer, class_name:"User", inverse_of: :produced_boards
