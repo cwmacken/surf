@@ -3,8 +3,8 @@
 		Outbound orders
 	</div>
 </div>
-<div class="tableText col-md-offset-1">
-	<table>
+<div class="inputTextAlt tableText col-md-6	 col-md-offset-1">
+	<table border="1">
 		<tr>
 			<th>Type</th>
 			<th>Length</th>
@@ -13,9 +13,6 @@
 			<th>Volume</th>
 			<th>Fins</th>
 			<th>Tail Type</th>
-			<th>Glass Top</th>
-			<th>Glass Bottom</th>
-			<th>Special Comments</th>
 			<th>Delete???</th>
 			<th>Order</th>
 			<th>Edit</th>
@@ -29,9 +26,6 @@
 			<td><%= boarddata.volume %></td>
 			<td><%= boarddata.fins %></td>
 			<td><%= boarddata.tailType %></td>
-			<td><%= boarddata.glassTop %></td>
-			<td><%= boarddata.glassBottom %></td>
-			<td><%= boarddata.specialComments %></td>
 			 <td><%= button_to "X", {action:"destroy", id:boarddata.id},
 	       {method: :delete, data:{confirm:"ARE YOU SURE YOU WANT TO DELETE THIS BOARD?"}, :class => "mybutton", class:"btnmain"}
 	        %></td>

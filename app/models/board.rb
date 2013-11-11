@@ -3,33 +3,33 @@
 
 	field :style, type: String
 	
-	field :length, type: Float
+	field :length, type: String
 
-	field :volume, type: Float	
+	field :volume, type: String	
 
-	#field :noseWidth6, type: Float
-	field :noseWidth12, type: Float
-	#field :tailWidth24, type: Float
-	field :width, type: Float	
-	field :widePoint, type: Float
-	#field :tailWidth24, type: Float
-	field :tailWidth12, type: Float
-	#field :tailWidth6, type: Float
+	#field :noseWidth6, type: String
+	field :noseWidth12, type: String
+	#field :tailWidth24, type: String
+	field :width, type: String	
+	field :widePoint, type: String
+	#field :tailWidth24, type: String
+	field :tailWidth12, type: String
+	#field :tailWidth6, type: String
 	
-	#field :thicknessNose6, type: Float
-	field :thicknessNose12, type: Float
-	#field :thicknessNose24, type: Float
-	field :thicknessMid, type: Float
-	#field :thicknessTail24, type: Float
-	field :thicknessTail12, type: Float
-	#field :thicknessTail6, type: Float
+	#field :thicknessNose6, type: String
+	field :thicknessNose12, type: String
+	#field :thicknessNose24, type: String
+	field :thicknessMid, type: String
+	#field :thicknessTail24, type: String
+	field :thicknessTail12, type: String
+	#field :thicknessTail6, type: String
 
-	field :rockerNose, type: Float
-	#field :rockerNose6, type: Float
-	field :rockerNose12, type: Float
-	field :rockerTail12, type: Float
-	#field :rockerNose6, type: Float
-	field :rockerTail, type: Float
+	field :rockerNose, type: String
+	#field :rockerNose6, type: String
+	field :rockerNose12, type: String
+	field :rockerTail12, type: String
+	#field :rockerNose6, type: String
+	field :rockerTail, type: String
 
 	field :concaveNoseEntry, type: String
 	#field :concaveNose6, type: String

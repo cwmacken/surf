@@ -10,7 +10,7 @@
     <ul class="nav nav-pills" id="header">
       <li><a class="headerLink"href='/boards/'>Boards</a></li>
       <li ><%= link_to "Edit Profile", edit_user_path(session[:user_id]), class:"headerLink"%></li>
-      <li id="signUp"><%= link_to_if( current_user.nil?, "Sign In", "/authentications/new") do
+      <li ><%= link_to_if( current_user.nil?, "Sign In", "/authentications/new", class:"headerLink") do
          link_to( "Sign Out", "/authentications/",{method: :delete})
        end
     %></li>

@@ -34,10 +34,6 @@ body{
 	text-decoration: none;
 }
 
-a:visited {
-	color:$main;
-}
-
 .btnmain{
 	font-family: $mainFontFam;
 	background-color: $highlight;
@@ -89,6 +85,7 @@ a:visited {
 	font-family: $mainFontFam;
 	font-weight: bold;
 	font-size: 5em;
+	margin-top: .5em;
 }
 
 .tableText{
@@ -96,4 +93,5 @@ a:visited {
 	font-family: $mainFontFam;
 	font-weight: bold;
 	font-size: 1em;
+	margin-top: 2.5em;
 }

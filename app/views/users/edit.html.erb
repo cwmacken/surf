@@ -1,46 +1,53 @@
-<div class="page_container">
-<h1>PROFILE INFO</h1>
+<div class="row">
+  <div class="pageHeader col-md-offset-1">
+      Profile
+  </div>
+</div>
 
-<%= form_for :user do |f| %>
-  <p>
-    <%= f.label :name %><br>
-    <%= f.text_field :name, class:"inputReset" %>
-  </p>
-  <p>
-    <%= f.label :height %><br>
-    <%= f.text_field :height, class:"inputReset" %>
-  </p>
-  <p>
-    <%= f.label :weight %><br>
-    <%= f.text_field :weight, class:"inputReset" %>
-  </p>
-  <p>
-    <%= f.label :skillLevel %><br>
-    <%= f.text_field :skillLevel, class:"inputReset" %>
-  </p>
-  <p>
-    <%= f.label :email %><br>
-    <%= f.text_field :email, class:"inputReset" %>
-  </p>
-  <p>
-    <%= f.label :label, class:"inputTextAlt" %><br>
-    <%= f.text_field :label, class:"inputReset" %>
-  </p>
-  <p>
-    <%= f.label :website, class:"inputTextAlt" %><br>
-    <%= f.text_field :website, class:"inputReset" %>
-  </p>
-  <p>
-    <%= f.label :address %><br>
-    <%= f.text_field :address, class:"inputReset" %>
-  </p>
-  <p>
-    <%= f.label :phone, class:"inputTextAlt" %><br>
-    <%= f.text_field :phone, class:"inputReset" %>
-  </p>
-  <p>
-    <%= f.submit "Save", class:"btnmain"%>
-  </p>
-<% end %>
+<div class="row">
+  <div class="col-md-offset-1 tableText">
+
+    <%= form_for :user do |f| %>
+      <p>
+        <%= f.label :name, class:"inputTextAlt" %>
+        <%= f.text_field :name, class:"inputReset" %>
+      </p>
+      <p>
+        <%= f.label :height, class:"inputTextAlt"  %>
+        <%= f.text_field :height, class:"inputReset" %>
+      </p>
+      <p>
+        <%= f.label :weight, class:"inputTextAlt"  %>
+        <%= f.text_field :weight, class:"inputReset" %>
+      </p>
+      <p>
+        <%= f.label :skillLevel, class:"inputTextAlt" %>
+        <%= f.text_field :skillLevel, class:"inputReset" %>
+      </p>
+      <p>
+        <%= f.label :email, class:"inputTextAlt"  %>
+        <%= f.text_field :email, class:"inputReset" %>
+      </p>
+      <p>
+        <%= f.label :label, class:"inputTextAlt" %>
+        <%= f.text_field :label, class:"inputReset" %>
+      </p>
+      <p>
+        <%= f.label :website, class:"inputTextAlt" %>
+        <%= f.text_field :website, class:"inputReset" %>
+      </p>
+      <p>
+        <%= f.label :address, class:"inputTextAlt"  %>
+        <%= f.text_field :address, class:"inputReset" %>
+      </p>
+      <p>
+        <%= f.label :phone, class:"inputTextAlt" %>
+        <%= f.text_field :phone, class:"inputReset" %>
+      </p>
+      <p>
+        <%= f.submit "Save", class:"btnmain"%>
+      </p>
+    <% end %>
+  </div>
 
 </div>
