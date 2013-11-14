@@ -1,4 +1,4 @@
-require 'respec'
+
 require './video'
 describe Video do 
 		it 'is a video object' do
