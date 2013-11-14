@@ -1,5 +1,4 @@
 
-require './video'
 describe Video do 
 		it 'is a video object' do
 			expect(Video.new).to be_an_instance_of(Video)
