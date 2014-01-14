@@ -1,5 +1,6 @@
 <div class="row">
 	<div class="col-md-12 col-md-offset-1">
+	<p></p>
 	<%= form_for @user, {url:"/authentications", method:"post"} do |user| %>
 
 	<p>
@@ -8,7 +9,7 @@
 	</p>
 	<p>
 		<%= user.label :password, "Password"%>
-		<%= user.text_field :password, class:"inputReset"%>
+		<%= user.password_field :password, class:"inputReset"%>
 	</p>
 	<p>
 		<%= user.submit "Login", class:"btnmain" %>
