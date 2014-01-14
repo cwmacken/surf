@@ -27,6 +27,7 @@ class UsersController < ApplicationController
 	end 
 	
 	def edit
+					before_action :authorize
     	@user = User.find(params[:id])
   	end
   	
