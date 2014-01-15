@@ -11,7 +11,7 @@ $highlight: rgba(255,0,0,.5);
 $mainFontFam: helvetica, arial, sans-serif;
 
 body{
-	background-image: url('http://cloud-media.com/wp-content/uploads/2013/11/WAVE.jpg');
+	background: url(image-path("WAVE.jpg"));
 	background-color: black;
 	background-size: cover;
 	background-repeat: no-repeat;
